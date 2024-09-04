@@ -68,7 +68,7 @@ export const UpcomingGames = () => {
             </div>
 
             <div className="leagueName">
-                Upcoming games in {leagueName}
+                {leagueName}dagi kelayotgan o'yinlar
             </div>
 
             {matches.length > 0 ? (
@@ -91,13 +91,13 @@ export const UpcomingGames = () => {
                         <div className="load-more-container">
                             <button className="load-more-btn" onClick={loadMore}>
                                 <PlusIcon />
-                                More Matches
+                                Ko'proq o'yinlar
                             </button>
                         </div>
                     )}
                 </>
             ) : (
-                <p className="no-game">No upcoming games at the moment</p>
+                <p className="no-game">Hozircha o'yinlar mavjud emas</p>
             )}
         </div>
     );
