@@ -1,0 +1,153 @@
+/* UpcomingGames.css */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.upcoming-games-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    min-height: 100vh;
+}
+
+/* League selection dropdown */
+.select-league {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.select-league label {
+    color: white;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    margin-right: 10px;
+}
+
+.select-league select {
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+/* Matches */
+.match-item {
+    background-color: #03416f;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.match-round {
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.team-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.team-name {
+    flex: 1;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Arial', sans-serif; /* You can replace this with any custom or web font */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 10px;
+}
+
+.vs {
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+}
+
+.match-time {
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+}
+
+/* Load More Button */
+.load-more-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.load-more-btn {
+    background-color: #03416f;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.load-more-btn:hover {
+    background-color: #02304f;
+}
+
+/* Responsive mobile-first adjustments */
+@media only screen and (max-width: 600px) {
+    .upcoming-games-container {
+        padding: 15px;
+    }
+
+    .match-item {
+        padding: 20px;
+    }
+
+    .team-name {
+        font-size: 16px;
+    }
+
+    .match-time {
+        font-size: 12px;
+    }
+
+    .load-more-btn {
+        font-size: 14px;
+    }
+
+    .load-more-icon {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+.no-game {
+    font-family: 'Nerko One', cursive !important;
+    font-size: 28px !important;
+    text-align: center;
+    color: white;
+}
+
+.leagueName {
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
